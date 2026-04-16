@@ -41,15 +41,15 @@ This makes the system more grounded, more modular, and easier to extend.
 The request flow is:
 ```
 User Query
--->
+↓
 Schema Retrieval (FAISS + Embeddings)
--->
+↓
 LLM → SQL Generation
--->
+↓
 Validation + Retry
--->
+↓
 Execution (DuckDB)
--->
+↓
 Result
 ```
 ## Tech Stack
