@@ -39,7 +39,7 @@ This makes the system more grounded, more modular, and easier to extend.
 ## Architecture
 
 The request flow is:
-
+```
 User Query
 -->
 Schema Retrieval (FAISS + Embeddings)
@@ -51,7 +51,7 @@ Validation + Retry
 Execution (DuckDB)
 -->
 Result
-
+```
 ## Tech Stack
 
 - FastAPI
