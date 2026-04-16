@@ -38,14 +38,19 @@ This makes the system more grounded, more modular, and easier to extend.
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    A[User Query] --> B[Schema Retrieval (FAISS + Embeddings)]
-    B --> C[LLM → SQL Generation]
-    C --> D[Validation + Retry]
-    D --> E[Execution (DuckDB)]
-    E --> F[Result]
-```
+The request flow is:
+
+User Query
+-->
+Schema Retrieval (FAISS + Embeddings)
+-->
+LLM → SQL Generation
+-->
+Validation + Retry
+-->
+Execution (DuckDB)
+-->
+Result
 
 ## Tech Stack
 
